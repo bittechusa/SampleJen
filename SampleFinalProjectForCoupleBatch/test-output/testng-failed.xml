@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test]">
+  <test name="name1">
+    <packages>
+      <package name="com.bit.test"/>
+    </packages>
+    <classes>
+      <class name="com.bit.test.A"/>
+      <class name="com.bit.test.BaseTest"/>
+      <class name="com.bit.test.DemoTest"/>
+      <class name="com.bit.test.Paral"/>
+      <class name="com.bit.test.SmokeTest"/>
+    </classes>
+  </test> <!-- name1 -->
+  <test name="name1(failed)">
+    <classes>
+      <class name="com.bit.test.DemoTest">
+        <methods>
+          <include name="m2"/>
+          <include name="getData" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.bit.test.DemoTest -->
+      <class name="com.bit.test.BaseTest">
+        <methods>
+          <include name="m"/>
+          <include name="start"/>
+          <include name="m1"/>
+        </methods>
+      </class> <!-- com.bit.test.BaseTest -->
+      <class name="com.bit.test.Paral">
+        <methods>
+          <include name="m1"/>
+        </methods>
+      </class> <!-- com.bit.test.Paral -->
+    </classes>
+  </test> <!-- name1(failed) -->
+</suite> <!-- Failed suite [test] -->

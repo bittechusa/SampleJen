@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [test]]">
+  <parameter name="browserf" value="chrome"/>
+  <test name="name1">
+    <parameter name="browserf" value="firefox"/>
+    <packages>
+      <package name="com.bit.test"/>
+    </packages>
+    <classes>
+      <class name="com.bit.test.BaseTest"/>
+      <class name="com.bit.test.SmokeTest"/>
+      <class name="com.bit.test.BaseTest"/>
+      <class name="com.bit.test.SmokeTest"/>
+    </classes>
+  </test> <!-- name1 -->
+  <test name="name2">
+    <parameter name="browserf" value="chrome"/>
+    <packages>
+      <package name="com.bit.test"/>
+    </packages>
+    <classes>
+      <class name="com.bit.test.BaseTest"/>
+      <class name="com.bit.test.SmokeTest"/>
+      <class name="com.bit.test.BaseTest"/>
+      <class name="com.bit.test.SmokeTest"/>
+    </classes>
+  </test> <!-- name2 -->
+  <test name="name1(failed)">
+    <parameter name="browserf" value="firefox"/>
+    <classes>
+      <class name="com.bit.test.BaseTest">
+        <methods>
+          <include name="m"/>
+          <include name="start"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.bit.test.BaseTest -->
+    </classes>
+  </test> <!-- name1(failed) -->
+  <test name="name2(failed)">
+    <parameter name="browserf" value="chrome"/>
+    <classes>
+      <class name="com.bit.test.BaseTest">
+        <methods>
+          <include name="m"/>
+          <include name="start"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.bit.test.BaseTest -->
+    </classes>
+  </test> <!-- name2(failed) -->
+  <test name="name1(failed)">
+    <parameter name="browserf" value="firefox"/>
+    <classes>
+      <class name="com.bit.test.BaseTest">
+        <methods>
+          <include name="m"/>
+          <include name="start"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.bit.test.BaseTest -->
+    </classes>
+  </test> <!-- name1(failed) -->
+  <test name="name2(failed)">
+    <parameter name="browserf" value="chrome"/>
+    <classes>
+      <class name="com.bit.test.BaseTest">
+        <methods>
+          <include name="m"/>
+          <include name="start"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.bit.test.BaseTest -->
+    </classes>
+  </test> <!-- name2(failed) -->
+  <test name="name1(failed)(failed)">
+    <parameter name="browserf" value="firefox"/>
+    <classes>
+      <class name="com.bit.test.BaseTest">
+        <methods>
+          <include name="m"/>
+          <include name="start"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.bit.test.BaseTest -->
+    </classes>
+  </test> <!-- name1(failed)(failed) -->
+  <test name="name2(failed)(failed)">
+    <parameter name="browserf" value="chrome"/>
+    <classes>
+      <class name="com.bit.test.BaseTest">
+        <methods>
+          <include name="m"/>
+          <include name="start"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.bit.test.BaseTest -->
+    </classes>
+  </test> <!-- name2(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [test]] -->

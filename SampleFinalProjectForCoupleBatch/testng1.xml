@@ -1,0 +1,44 @@
+<suite name="test" parallel="test">
+
+<test name ="name1">
+<classes>
+<class name="com.bit.test.A"></class>
+</classes>
+
+</test>
+ <!-- <packages> 
+<package name ="com.bit.test"></package>
+
+</packages>
+</test>
+<classes>
+<class name="com.bit.test.DemoTest"></class>
+
+
+
+</classes>
+<parameter name="b" value="f"></parameter>
+<classes>
+<class name="com.bit.test.DemoTest">
+<methods>
+<method>
+<include name="m2"></include>
+</method>
+</methods>
+</class>
+</classes>
+</test>
+
+<test name ="name2">
+<parameter name="b" value="c"></parameter>
+<classes>
+<class name="com.bit.test.DemoTest">
+<methods>
+<method>
+<include name="m2"></include>
+</method>
+</methods>
+</class>
+</classes>
+</test> --> -->
+</suite>

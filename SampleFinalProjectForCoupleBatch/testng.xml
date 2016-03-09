@@ -1,0 +1,37 @@
+<suite name="test" parallel="tests">
+
+<test name ="name1">
+<parameter name ="browser" value ="f"></parameter>
+<classes>
+<class name="com.bit.test.Paral">
+<methods>
+<method>
+<include name="m1"></include>
+</method>
+</methods>
+</class>
+
+</classes> 
+</test>
+
+<test name ="name2">
+<parameter name ="browser" value ="c"></parameter>
+<classes>
+
+
+<class name="com.bit.test.Paral">
+<methods>
+<method>
+<include name="m1"></include>
+</method>
+</methods>
+</class>
+
+</classes> 
+</test>
+
+
+
+
+
+</suite>
