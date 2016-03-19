@@ -14,9 +14,9 @@ public class A
 	{
 		WebDriver dr=new FirefoxDriver();
 		dr.get("http://www.facebook.com");
-		Pattern p=new Pattern("\\Users\\shahidulislam\\Desktop\\shot1.png");
+		/*Pattern p=new Pattern("\\Users\\shahidulislam\\Desktop\\shot1.png");
 		Screen s=new Screen();
-		s.doubleClick("\\Users\\shahidulislam\\Desktop\\shot1");
+		s.doubleClick("\\Users\\shahidulislam\\Desktop\\shot1");*/
 	}
 
 }
