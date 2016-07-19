@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 10 21:02:54 EST 2016</td>
+<td>Started on:</td><td>Mon May 09 20:19:43 EDT 2016</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12478 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6447 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,32 +76,43 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.TestListner.loginFB()'><b>loginFB</b><br>Test class: com.TestListner</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: document.getElementById(...) is null
-Command duration or timeout: 9 milliseconds
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;passgfdhh&quot;}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;Bittechs-iMac.home&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
+System info: host: &apos;Shahiduls-iMac.home&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4b8df7c9-cb45-024b-ab6e-9384e378e0fb
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bbc4f41f-a4e2-eb4a-a942-97fb250c8887
+*** Element info: {Using=id, value=passgfdhh}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
-	at com.TestListner.loginFB(TestListner.java:23)
-Caused by: org.openqa.selenium.WebDriverException: document.getElementById(...) is null
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.TestListner.loginFB(TestListner.java:35)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;passgfdhh&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;Bittechs-iMac.home&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
+System info: host: &apos;Shahiduls-iMac.home&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.anonymous(http://www.bluefly.com/special/shoes?so=pop&amp;sosc=true&amp;pid=cat1970656&amp;activePrice=399~400 line 69 &gt; Function:1)
-	at &lt;anonymous class&gt;.handleEvaluateEvent(http://www.bluefly.com/special/shoes?so=pop&amp;sosc=true&amp;pid=cat1970656&amp;activePrice=399~400:69)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1435804085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1435804085'><pre>org.openqa.selenium.WebDriverException: document.getElementById(...) is null
-Command duration or timeout: 9 milliseconds
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1721246982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1721246982'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;passgfdhh&quot;}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;Bittechs-iMac.home&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
+System info: host: &apos;Shahiduls-iMac.home&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4b8df7c9-cb45-024b-ab6e-9384e378e0fb
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bbc4f41f-a4e2-eb4a-a942-97fb250c8887
+*** Element info: {Using=id, value=passgfdhh}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -109,8 +120,11 @@ Session ID: 4b8df7c9-cb45-024b-ab6e-9384e378e0fb
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
-	at com.TestListner.loginFB(TestListner.java:23)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.TestListner.loginFB(TestListner.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,15 +149,19 @@ Session ID: 4b8df7c9-cb45-024b-ab6e-9384e378e0fb
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.openqa.selenium.WebDriverException: document.getElementById(...) is null
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;passgfdhh&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;Bittechs-iMac.home&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
+System info: host: &apos;Shahiduls-iMac.home&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.anonymous(http://www.bluefly.com/special/shoes?so=pop&amp;sosc=true&amp;pid=cat1970656&amp;activePrice=399~400 line 69 &gt; Function:1)
-	at &lt;anonymous class&gt;.handleEvaluateEvent(http://www.bluefly.com/special/shoes?so=pop&amp;sosc=true&amp;pid=cat1970656&amp;activePrice=399~400:69)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
 </pre></div></td>
-<td>12</td>
-<td>com.TestListner@1c53fd30</td></tr>
+<td>6</td>
+<td>com.TestListner@d737b89</td></tr>
 </table><p>
 </body>
 </html>

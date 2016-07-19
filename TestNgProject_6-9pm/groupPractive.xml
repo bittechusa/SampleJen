@@ -1,0 +1,17 @@
+<suite name="Suite">
+
+	<test name="practice Grouping">
+		<groups>
+			<run>
+				<include name="Car" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.bit.testNg.Grouping" />
+		
+		
+		</classes>
+		
+	</test>
+
+</suite>

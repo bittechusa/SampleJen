@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [regression]" parallel="tests">
+  <parameter name="browser" value="ie"/>
+  <test name="test2(failed)" parallel="tests">
+    <parameter name="browser" value="c"/>
+    <classes>
+      <class name="com.bit.test.ParallelTest">
+        <methods>
+          <include name="m1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bit.test.ParallelTest -->
+    </classes>
+  </test> <!-- test2(failed) -->
+</suite> <!-- Failed suite [regression] -->

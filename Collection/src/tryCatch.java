@@ -1,7 +1,4 @@
-
-
 import java.util.List;
-
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -15,7 +12,8 @@ public class tryCatch
 	public void m1()
 	{
 		try
-	{
+		{
+			
 			dr.get("http://www.facebook.com");
 			List<WebElement> elements=dr.findElements(By.tagName("a"));
 			for(WebElement moga:elements)
@@ -24,7 +22,7 @@ public class tryCatch
 			}
 //			System.out.println(10/0);
 //			dr.findElement(By.id("shahid")).click();
-			}
+		}
 		catch(NoSuchElementException e)
 		{
 			System.out.println("element not present");

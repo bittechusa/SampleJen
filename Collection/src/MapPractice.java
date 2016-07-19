@@ -31,17 +31,16 @@ public class MapPractice
 		hp.put(1, "kazi");
 		hp.put(4, "shahid");
 		hp.put(3, "mushfiq");
-		hp.put(null, null);//it take one null key and mutiple null value
+		hp.put(null, "bodrul");//it take one null key and mutiple null value
 		hp.put(6, null);
 		Iterator it = hp.entrySet().iterator();
 		while(it.hasNext())
 		{
 			//System.out.println(it.next());
-			Map.Entry m=(Entry) it.next();
+			Map.Entry m= (Entry) it.next();
 			
-			//System.out.println(m.getValue());
-			System.out.println(m.getKey());
-			
+			System.out.println(m.getValue());
+			//System.out.println(m.getKey());			
 		}
 		
 		/*for(int i=1;i<=hp.size();i++)

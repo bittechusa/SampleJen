@@ -2,30 +2,34 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12478" started-at="2016-03-11T02:02:54Z" finished-at="2016-03-11T02:03:06Z">
+  <suite name="Suite" duration-ms="6447" started-at="2016-05-10T00:19:43Z" finished-at="2016-05-10T00:19:49Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12478" started-at="2016-03-11T02:02:54Z" finished-at="2016-03-11T02:03:06Z">
+    <test name="Test" duration-ms="6447" started-at="2016-05-10T00:19:43Z" finished-at="2016-05-10T00:19:49Z">
       <class name="com.TestListner">
-        <test-method status="FAIL" signature="loginFB()[pri:0, instance:com.TestListner@1c53fd30]" name="loginFB" duration-ms="12465" started-at="2016-03-10T21:02:54Z" finished-at="2016-03-10T21:03:06Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="loginFB()[pri:0, instance:com.TestListner@d737b89]" name="loginFB" duration-ms="6222" started-at="2016-05-09T20:19:43Z" finished-at="2016-05-09T20:19:49Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[document.getElementById(...) is null
-Command duration or timeout: 9 milliseconds
+              <![CDATA[Unable to locate element: {"method":"id","selector":"passgfdhh"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'Bittechs-iMac.home', ip: '192.168.1.9', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_73'
+System info: host: 'Shahiduls-iMac.home', ip: '192.168.1.25', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4b8df7c9-cb45-024b-ab6e-9384e378e0fb]]>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bbc4f41f-a4e2-eb4a-a942-97fb250c8887
+*** Element info: {Using=id, value=passgfdhh}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: document.getElementById(...) is null
-Command duration or timeout: 9 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"passgfdhh"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'Bittechs-iMac.home', ip: '192.168.1.9', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_73'
+System info: host: 'Shahiduls-iMac.home', ip: '192.168.1.25', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4b8df7c9-cb45-024b-ab6e-9384e378e0fb
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bbc4f41f-a4e2-eb4a-a942-97fb250c8887
+*** Element info: {Using=id, value=passgfdhh}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -33,8 +37,11 @@ Session ID: 4b8df7c9-cb45-024b-ab6e-9384e378e0fb
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
-	at com.TestListner.loginFB(TestListner.java:23)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.TestListner.loginFB(TestListner.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,15 +66,19 @@ Session ID: 4b8df7c9-cb45-024b-ab6e-9384e378e0fb
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.openqa.selenium.WebDriverException: document.getElementById(...) is null
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"passgfdhh"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'Bittechs-iMac.home', ip: '192.168.1.9', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_73'
+System info: host: 'Shahiduls-iMac.home', ip: '192.168.1.25', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_73'
 Driver info: driver.version: unknown
-	at <anonymous class>.anonymous(http://www.bluefly.com/special/shoes?so=pop&sosc=true&pid=cat1970656&activePrice=399~400 line 69 > Function:1)
-	at <anonymous class>.handleEvaluateEvent(http://www.bluefly.com/special/shoes?so=pop&sosc=true&pid=cat1970656&activePrice=399~400:69)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFB -->

@@ -127,24 +127,33 @@
                   <a name="loginFB">
                   </a> <!-- loginFB -->
                   <span class="method-name">loginFB</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: document.getElementById(...) is null
-Command duration or timeout: 9 milliseconds
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;passgfdhh&quot;}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;Bittechs-iMac.home&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
+System info: host: &apos;Shahiduls-iMac.home&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4b8df7c9-cb45-024b-ab6e-9384e378e0fb
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bbc4f41f-a4e2-eb4a-a942-97fb250c8887
+*** Element info: {Using=id, value=passgfdhh}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
-	at com.TestListner.loginFB(TestListner.java:23)
-Caused by: org.openqa.selenium.WebDriverException: document.getElementById(...) is null
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.TestListner.loginFB(TestListner.java:35)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;passgfdhh&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;Bittechs-iMac.home&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
+System info: host: &apos;Shahiduls-iMac.home&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.anonymous(http://www.bluefly.com/special/shoes?so=pop&amp;sosc=true&amp;pid=cat1970656&amp;activePrice=399~400 line 69 &gt; Function:1)
-	at &lt;anonymous class&gt;.handleEvaluateEvent(http://www.bluefly.com/special/shoes?so=pop&amp;sosc=true&amp;pid=cat1970656&amp;activePrice=399~400:69)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/lx/z8ywm3c918dc0hq6dpb69tw00000gn/T/anonymous7340455221751541293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -154,7 +163,7 @@ Driver info: driver.version: unknown
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/bittech/Documents/workspace/WebDriverListner/testng.xml</span>
+            <span class="header-content">/Users/bittech/Desktop/SampleJen/WebDriverListner/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -210,12 +219,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginFB')
 data.setCell(0, 2, 'com.TestListner')
-data.setCell(0, 3, 12465);
+data.setCell(0, 3, 6222);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->

@@ -1,0 +1,14 @@
+<suite name="test">
+
+	<test name="single method">
+	<classes>
+	<class name="com.bit.testNg.Grouping">
+		<methods>
+		
+			<include name="sample" /> 
+		</methods>
+		</class>
+		</classes>
+	</test>
+
+</suite>

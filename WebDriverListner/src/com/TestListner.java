@@ -1,6 +1,13 @@
 package com;
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestContext;
@@ -9,27 +16,33 @@ import org.testng.ITestResult;
 import org.testng.annotations.Test;
 
 public class TestListner implements ITestListener{
-
+	 WebDriver driver=new FirefoxDriver();
 	 @Test
 	    public void loginFB() throws InterruptedException{
 	       
-	        WebDriver driver=new FirefoxDriver();
-	        driver.get("http://www.bluefly.com/special/shoes?so=pop&sosc=true&pid=cat1970656&activePrice=399~400");
+	       // WebDriver driver=new FirefoxDriver();
+	        driver.get("http://www.facebook.com");
 	        driver.manage().window().maximize();
 	        driver.navigate().refresh();
 	        Thread.sleep(3000);
-	        JavascriptExecutor js = (JavascriptExecutor)driver;
+	       // JavascriptExecutor js = (JavascriptExecutor)driver;
 	       
-	        js.executeScript("document.getElementById('productsPerPageTopComboboxInput1').value='96'");
+	        //js.executeScript("document.getElementById('productsPerPageTopComboboxInput1').value='96'");
 
 	        
 	        
 	        driver.findElement(By.id("email")).sendKeys("mukesh@facebook.com");
-	        driver.findElement(By.id("passgffd")).sendKeys("dont-tell");
+	        driver.findElement(By.id("passgfdhh")).sendKeys("dont-tell");
 	        driver.findElement(By.id("u_0_y")).click();
-	    }
+	       
+	       
+	 }
 	    
-	    
+	  public void screen() throws IOException
+	  {
+		  File sf=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	        FileUtils.copyFile(sf, new File("/Users/bittech/Desktop/shot"+Math.random()*1000+".png"),true);
+	  }
 	    
 	    
 	    @Override
@@ -54,6 +67,12 @@ public class TestListner implements ITestListener{
 	    public void onTestFailure(ITestResult arg0) {
 	    
 	        System.out.println("Screen shot captured====="+arg0.toString());
+	        try {
+				screen();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				System.out.println("catch");
+			}
 	       
 	    }
 	 

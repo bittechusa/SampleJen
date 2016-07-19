@@ -10,6 +10,7 @@ public class SmokeTest
 	@Test
 	public void m1() throws InterruptedException
 	{
+		
 		//WebDriver driver=new FirefoxDriver();
 		 
 		EventFiringWebDriver listner=new EventFiringWebDriver(driver);
@@ -20,7 +21,7 @@ public class SmokeTest
 		 
 		listner.navigate().to("http://www.facebook.com");
 		 Thread.sleep(3000);
-		listner.findElement(By.id("email")).sendKeys("asdsadsa");
+		listner.findElement(By.id("emailgdg")).sendKeys("asdsadsa");
 		Thread.sleep(3000);
 		listner.findElement(By.id("u_0_y")).click();
 		Thread.sleep(3000);

@@ -13,13 +13,13 @@ public class BaseListner implements WebDriverEventListener{
 
 	@Override
 	public void afterClickOn(WebElement e, WebDriver e1) {
-		System.out.println("After click "+e.toString());
+		System.out.println("After click "+e);
 		
 	}
 
 	@Override
 	public void afterFindBy(By arg0, WebElement e, WebDriver e1) {
-		System.out.println("After findBy "+e1.toString());
+		System.out.println("After findBy "+e1.findElement(arg0).getText());
 		
 	}
 

@@ -1,0 +1,27 @@
+<suite name='regression' parallel="tests">
+
+   <test name="test1">
+       <parameter name="browser" value="f"></parameter>
+<classes>
+<class name="com.bit.test.ParallelTest">
+</class>
+</classes>
+</test>
+<test name="test2">
+       <parameter name="browser" value="c"></parameter>
+<classes>
+<class name="com.bit.test.ParallelTest">
+</class>
+</classes>
+</test>
+
+   <test name="test3">
+  <parameter name="browser" value="ie"></parameter>
+<classes>
+<class name="com.bit.test.ParallelTest">
+</class>
+</classes>
+</test> 
+    
+  
+</suite>

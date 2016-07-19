@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test]">
+  <test name="package run">
+    <packages>
+      <package name="com.bit.testNg"/>
+    </packages>
+    <classes>
+      <class name="com.bit.testNg.BasicAnnotation"/>
+      <class name="com.bit.testNg.DataProviderPractice"/>
+      <class name="com.bit.testNg.Grouping"/>
+    </classes>
+  </test> <!-- package run -->
+</suite> <!-- Failed suite [test] -->

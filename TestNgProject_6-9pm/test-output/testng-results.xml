@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="23" started-at="2016-03-10T02:04:36Z" finished-at="2016-03-10T02:04:36Z">
+    <groups>
+      <group name="Car">
+        <method signature="Grouping.nissan()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="nissan" class="com.bit.testNg.Grouping"/>
+        <method signature="Grouping.toyota()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="toyota" class="com.bit.testNg.Grouping"/>
+        <method signature="Grouping.xyz()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="xyz" class="com.bit.testNg.Grouping"/>
+      </group> <!-- Car -->
+      <group name="Book">
+        <method signature="Grouping.abc()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="abc" class="com.bit.testNg.Grouping"/>
+        <method signature="Grouping.lambo()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="lambo" class="com.bit.testNg.Grouping"/>
+      </group> <!-- Book -->
+    </groups>
+    <test name="class run" duration-ms="23" started-at="2016-03-10T02:04:36Z" finished-at="2016-03-10T02:04:36Z">
+      <class name="com.bit.testNg.Grouping">
+        <test-method status="PASS" signature="abc()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="abc" duration-ms="8" started-at="2016-03-09T21:04:36Z" finished-at="2016-03-09T21:04:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc -->
+        <test-method status="PASS" signature="lambo()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="lambo" duration-ms="0" started-at="2016-03-09T21:04:36Z" finished-at="2016-03-09T21:04:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lambo -->
+        <test-method status="PASS" signature="nissan()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="nissan" duration-ms="0" started-at="2016-03-09T21:04:36Z" finished-at="2016-03-09T21:04:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nissan -->
+        <test-method status="PASS" signature="sample()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="sample" duration-ms="0" started-at="2016-03-09T21:04:36Z" finished-at="2016-03-09T21:04:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample -->
+        <test-method status="PASS" signature="toyota()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="toyota" duration-ms="0" started-at="2016-03-09T21:04:36Z" finished-at="2016-03-09T21:04:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toyota -->
+        <test-method status="PASS" signature="xyz()[pri:0, instance:com.bit.testNg.Grouping@4563e9ab]" name="xyz" duration-ms="1" started-at="2016-03-09T21:04:36Z" finished-at="2016-03-09T21:04:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xyz -->
+      </class> <!-- com.bit.testNg.Grouping -->
+    </test> <!-- class run -->
+  </suite> <!-- Suite -->
+</testng-results>

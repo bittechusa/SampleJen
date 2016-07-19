@@ -1,6 +1,8 @@
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.ListIterator;
 import java.util.TreeSet;
 
 import org.junit.Test;
@@ -8,12 +10,18 @@ import org.junit.Test;
 public class SetPractice 
 {
 	int [] a={3,5,9,9,5,3};
+	HashSet<Object> h1=new HashSet<Object>();
 	HashSet<Integer> h=new HashSet<Integer>();
 	LinkedHashSet<Integer> ls=new LinkedHashSet<Integer>();
 	TreeSet<Integer> t=new TreeSet<Integer>();
+	TreeSet<String> ts=new TreeSet<String>();
 	@Test
 	public void copyArray()
 	{
+		  //ListIterator li=h.listIterator();
+		Collections.enumeration(ls).hasMoreElements();
+		h1.add(3);
+		h1.add("dgfj");
 		for(int i=0;i<a.length;i++)
 		{
 			h.add(a[i]);//it will add only unique value because os set
@@ -28,18 +36,21 @@ public class SetPractice
 	public void m1()
 	{
 		long s=System.currentTimeMillis();//to get system start time
-		for(int i=0;i<100000;i++)
+		/*for(int i=0;i<100000;i++)
 		{
 			t.add(i);
-		}
+		}*/
 		long e=System.currentTimeMillis();//to get system end time
 		System.out.println("treeSet " +(e-s));//to check performance
 		t.add(5);
 		t.add(3);
 		t.add(9);
+		ts.add("tiger");
+		ts.add("chicken");
+		ts.add("cat");
 		//t.add(null);//it will throgh an exception because treeset cannot take null value
 		//ls.add(9);
-		Iterator i1=t.iterator();
+		Iterator i1=ts.iterator();
 		while(i1.hasNext())
 		{
 			System.out.println(i1.next());

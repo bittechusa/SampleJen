@@ -1,0 +1,12 @@
+<suite name="test">
+
+	<test name="package run">
+	
+		<packages>
+			<package name="com.bit.testNg"> </package>
+		
+		</packages>
+		
+	</test>
+
+</suite>
